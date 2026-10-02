@@ -9,11 +9,23 @@
     margin: 10vh 4vw;
     padding: 8px;
     background-color: #FFD700;
-
+    border-radius: 24px;
     &::-webkit-scrollbar{
         scrollbar-width: none;
     }
     /* scroll-snap-type: x mandatory; */
+}
+#sideways{
+    writing-mode: sideways-lr;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Bilbo', cursive;
+    color: red;
+    border: 3px red solid;
+    border-radius: 9999px;
+}
+#vertical_rule{
+    border-left: 5px white solid;
 }
 .cards{
     /* scroll-snap-align: start; */
