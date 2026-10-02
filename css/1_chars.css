@@ -1,32 +1,42 @@
-.box{
-    display: flex;
-    flex-flow: row no-wrap;
-    justify-content: space-evenly;
-    overflow-x: auto;
-
+.parent{
     height: auto;
     width: auto;
     margin: 10vh 4vw;
     padding: 8px;
-    background-color: #FFD700;
     border-radius: 24px;
-    &::-webkit-scrollbar{
-        scrollbar-width: none;
-    }
-    /* scroll-snap-type: x mandatory; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
 }
+
 #sideways{
     writing-mode: sideways-lr;
     text-align: center;
     font-size: 48px;
     font-family: 'Bilbo', cursive;
     color: red;
-    border: 3px red solid;
-    border-radius: 9999px;
+    padding: 5px;
 }
-#vertical_rule{
-    border-left: 5px white solid;
+
+.box{
+    background-color: #FFD700;
+    border-radius: 48px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar{
+        scrollbar-width: none;
+    }
+    /* scroll-snap-type: x mandatory; */
 }
+
+
 .cards{
     /* scroll-snap-align: start; */
 
@@ -34,7 +44,7 @@
     background-color: black;
     height: 300px;
     width: 250px;
-    border-radius: 24px;
+    border-radius: 48px;
     margin: 24px;
     a{
         text-decoration: none;
